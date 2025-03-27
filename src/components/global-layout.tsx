@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function GlobalLayout({ children }: { children: ReactNode }) {
   return (
-    <div>
+    <div className={style.container}>
       <header className={style.header}>
         <Link href="/">ONEBITE CINEMA</Link>
       </header>
