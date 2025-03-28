@@ -32,7 +32,7 @@ export default function SearchableLayout({
 
   return (
     <div>
-      <div>
+      <div className={style.searchbar_container}>
         <input
           value={search}
           onChange={onChangeSearch}
