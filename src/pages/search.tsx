@@ -3,13 +3,14 @@ import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import movies from "@/mock/movies.json";
 import MovieItem from "@/components/movie-item";
+import style from "./search.module.css";
 
 export default function Search() {
   const router = useRouter();
   const q = router.query.q as string;
 
   return (
-    <div>
+    <div className={style.container}>
       {movies
         .filter((movie) => movie.title.includes(q))
         .map((movie) => (
