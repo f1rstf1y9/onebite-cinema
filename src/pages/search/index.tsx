@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import movies from "@/mock/movies.json";
 import MovieItem from "@/components/movie-item";
-import style from "./search.module.css";
+import style from "./index.module.css";
 
 export default function Search() {
   const router = useRouter();
