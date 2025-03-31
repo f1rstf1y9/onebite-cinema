@@ -24,7 +24,7 @@
 
 .cover_img_container > img {
   z-index: 1;
-  min-height: 350px;
+  max-height: 350px;
   height: 100%;
 }
 
@@ -32,12 +32,7 @@
   font-size: x-large;
   font-weight: bold;
 }
-.detailInfo {
-}
-.company {
-}
+
 .subTitle {
   font-weight: bold;
-}
-.description {
 }
