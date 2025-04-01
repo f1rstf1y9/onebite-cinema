@@ -12,8 +12,8 @@ export default function SearchableLayout({
   const q = router.query.q as string;
 
   useEffect(() => {
-    setSearch(q);
-  }, []);
+    setSearch(q || "");
+  }, [q]);
 
   const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
