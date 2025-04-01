@@ -2,7 +2,7 @@ import SearchableLayout from "@/components/searchable-layout";
 import { ReactNode, useEffect, useState } from "react";
 import MovieItem from "@/components/movie-item";
 import style from "./index.module.css";
-import fetchMovie from "@/lib/fetch-movies";
+import fetchMovies from "@/lib/fetch-movies";
 import { useRouter } from "next/router";
 import { MovieData } from "@/types";
 
@@ -13,7 +13,7 @@ export default function Search() {
   const q = router.query.q;
 
   const fetchSearchResults = async () => {
-    const data = await fetchMovie(q as string);
+    const data = await fetchMovies(q as string);
     setMovies(data);
   };
 
