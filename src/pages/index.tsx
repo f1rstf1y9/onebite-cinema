@@ -2,13 +2,13 @@ import SearchableLayout from "@/components/searchable-layout";
 import { ReactNode } from "react";
 import MovieItem from "@/components/movie-item";
 import style from "./index.module.css";
-import fetchMovie from "@/lib/fetch-movies";
+import fetchMovies from "@/lib/fetch-movies";
 import { InferGetStaticPropsType } from "next";
 import { fetchRandomMovies } from "@/lib/fetch-random-movies";
 
 export const getStaticProps = async () => {
   const [allMovies, recoMovies] = await Promise.all([
-    fetchMovie(),
+    fetchMovies(),
     fetchRandomMovies(),
   ]);
   return {
