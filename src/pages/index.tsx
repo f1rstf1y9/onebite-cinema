@@ -13,6 +13,7 @@ export const getStaticProps = async () => {
   ]);
   return {
     props: { allMovies, recoMovies },
+    revalidate: 60,
   };
 };
 
