@@ -1,40 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎬 onebite-cinema
 
-## Getting Started
+> 이정환님의 강의 [한 입 크기로 잘라먹는 Next.js(v15)](https://inf.run/kx4Pe)강의를 수강하며 진행한 한입 챌린지(day1 ~ day8) 과제 레포지토리입니다. 해당 챌린지 기간 동안 Next.js의 Page Router 버전을 학습했습니다.
+> 
 
-First, run the development server:
+- **vercel 배포 페이지** : 🔗[웹사이트 링크](https://onebite-cinema-three.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br>
+ 
+## 🖥️ 챌린지 과제 결과 (한입 씨네마)
+| <img title="" src="https://github.com/user-attachments/assets/604925be-cf2d-4fe2-ba92-34f3368ac9f0" alt="" width="386"> | <img title="" src="https://github.com/user-attachments/assets/dc4d91fa-2eb5-4e50-acd4-8060543b7792" alt="" width="386"> |
+|:--------:|:--------:|
+| 메인 화면 | 검색 결과 페이지 |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📌 챌린지 내용
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### day2
+한입 씨네마 프로젝트 생성 및 라우팅 설정
+- Page Router 버전 프로젝트 생성
+- `/`, `/search`, `/movie/[id]` 라우팅 설정
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### day3
+한입 씨네마 백엔드 서버 세팅
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### day4
+한입 씨네마 레이아웃 설정
+- 글로벌 레이아웃 및 검색바 레이아웃 설정
 
-## Learn More
+### day5
+한입 씨네마 UI 구현
 
-To learn more about Next.js, take a look at the following resources:
+### day6
+한입 씨네마 데이터 페칭 구현 및 SSR 적용 ([🔗PR 링크](https://github.com/f1rstf1y9/onebite-cinema/pull/1))
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### day7
+한입 씨네마 SSG 적용 ([🔗PR 링크](https://github.com/f1rstf1y9/onebite-cinema/pull/2))
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### day8
+한입 씨네마 ISR 적용 및 SEO 설정 후 배포 ([🔗PR 링크](https://github.com/f1rstf1y9/onebite-cinema/pull/3))
